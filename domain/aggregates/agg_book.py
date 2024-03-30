@@ -1,7 +1,7 @@
 from ..value_objects.book import VOBook
 from ..value_objects.chapter import VOChapter
-from ...repositories.repo_book import IBookRepo
-from ...repositories.repo_chapter import IChapterRepo
+from ..repositories.repo_book import IBookRepo
+from ..repositories.repo_chapter import IChapterRepo
 
 
 class AggBook:

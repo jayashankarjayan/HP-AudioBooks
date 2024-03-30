@@ -1,4 +1,4 @@
-from domain.entities.value_objects.audio_source import VOAudioSource
+from domain.value_objects.audio_source import VOAudioSource
 
 
 class AudioSourceRepo:

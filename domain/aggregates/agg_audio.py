@@ -1,4 +1,4 @@
-from ...repositories.repo_audio_source import IAudioSourceRepo
+from ..repositories.repo_audio_source import IAudioSourceRepo
 from ..value_objects.audio_source import VOAudioSource
 from ..value_objects.book import VOBook
 

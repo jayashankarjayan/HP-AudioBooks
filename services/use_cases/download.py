@@ -3,8 +3,8 @@ import requests
 from requests.models import Response
 
 
-from domain.entities.aggregates.agg_book import AggBook
-from domain.entities.aggregates.agg_audio import AggAudio
+from domain.aggregates.agg_book import AggBook
+from domain.aggregates.agg_audio import AggAudio
 from domain.repositories.repo_audio_source import IAudioSourceRepo
 from domain.repositories.repo_book import IBookRepo
 from domain.repositories.repo_chapter import IChapterRepo

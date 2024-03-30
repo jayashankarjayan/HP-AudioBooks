@@ -1,5 +1,5 @@
 from typing import Protocol
-from ..entities.value_objects.chapter import VOChapter, VOChapters
+from ..value_objects.chapter import VOChapter, VOChapters
 
 
 class IChapterRepo(Protocol):

@@ -1,4 +1,4 @@
-from domain.entities.value_objects.book import VOBook, VOBooks
+from domain.value_objects.book import VOBook, VOBooks
 
 
 class BookRepo:

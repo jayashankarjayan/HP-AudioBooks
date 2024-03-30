@@ -1,5 +1,5 @@
 from typing import Protocol
-from ..entities.value_objects.book import VOBook, VOBooks
+from ..value_objects.book import VOBook, VOBooks
 
 
 class IBookRepo(Protocol):

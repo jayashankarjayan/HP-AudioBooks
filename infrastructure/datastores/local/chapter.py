@@ -1,4 +1,4 @@
-from domain.entities.value_objects.chapter import VOChapter, VOChapters
+from domain.value_objects.chapter import VOChapter, VOChapters
 
 
 class ChapterRepo:

@@ -1,5 +1,5 @@
 from typing import Protocol
-from ..entities.value_objects.audio_source import VOAudioSource
+from ..value_objects.audio_source import VOAudioSource
 
 
 class IAudioSourceRepo(Protocol):
