@@ -36,7 +36,7 @@ class ChapterRepo:
                 VOChapter(name="Chapter 08 - The Deathday Party", book_name="chamber of secrets"),
                 VOChapter(name="Chapter 09 - The Writing on the Wall", book_name="chamber of secrets"),
                 VOChapter(name="Chapter 10 - The Rogue Bludger", book_name="chamber of secrets"),
-                VOChapter(name="Chapter 11 - The Dueling Club", book_name="chamber of secrets"),
+                VOChapter(name="Chapter 11 - The Duelling Club", book_name="chamber of secrets"),
                 VOChapter(name="Chapter 12 - The Polyjuice Potion", book_name="chamber of secrets"),
                 VOChapter(name="Chapter 13 - The Very Secret Diary", book_name="chamber of secrets"),
                 VOChapter(name="Chapter 14 - Cornelius Fudge", book_name="chamber of secrets"),
