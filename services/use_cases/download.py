@@ -4,8 +4,6 @@ from requests.models import Response
 
 
 from domain.aggregates.book.read import BookQueryManager
-from domain.aggregates.book.write import AggBook
-from domain.aggregates.agg_audio import AggAudio
 from domain.repositories.repo_audio_source import IAudioSourceRepo
 from domain.repositories.repo_book import IBookRepo
 from domain.repositories.repo_chapter import IChapterRepo
@@ -35,7 +33,7 @@ class DownloadBooks:
             self.chapter_repo, book.name
         )
 
-        source = AggAudio.get_source(self.audio_repo, book)
+        source = BookQueryManager.get_audio_source(self.audio_repo, book)
 
         if not os.path.exists(payload.folder_path):
             os.mkdir(payload.folder_path)
