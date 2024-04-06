@@ -1,11 +1,11 @@
 from typing import Protocol
-from ..value_objects.chapter import VOChapter, VOChapters
+from ..value_objects.chapter import VOChapters
 
 
 class IChapterRepo(Protocol):
 
-    def get_all(self, book_name: str) -> list[VOChapter]:
+    def get_all(self, book_name: str) -> VOChapters:
         ...
 
-    def add_chapters(self, chapters: VOChapters) -> list[VOChapter]:
+    def bulk_add_chapters(self, chapters: VOChapters) -> VOChapters:
         ...

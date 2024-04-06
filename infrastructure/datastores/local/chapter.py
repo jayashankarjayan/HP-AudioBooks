@@ -221,8 +221,8 @@ class ChapterRepo:
                 ]
         }
 
-    def get_all(self, book_name: str) -> list[VOChapter]:
-        return self.chapters[book_name]
+    def get_all(self, book_name: str) -> VOChapters:
+        return VOChapters.model_validate(self.chapters[book_name])
 
-    def add_chapters(self, chapters: VOChapters) -> list[VOChapter]:
+    def bulk_add_chapters(self, chapters: VOChapters) -> VOChapters:
         ...

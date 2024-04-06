@@ -13,11 +13,10 @@ downloader = typer.Typer()
 audio_source_repo = AudioSourceRepo()
 book_repo = BookRepo()
 chapter_repo = ChapterRepo()
-download_books = DownloadBooks()
+download_books = DownloadBooks(book_repo, chapter_repo, audio_source_repo)
 
 
 @downloader.command()
 def download_book(book_name: str):
-    user_input = BookDownloadInput(name=book_name, folder_path="")
-    download_books.download_by_name(book_repo, chapter_repo,
-                                    audio_source_repo, user_input)
+    user_input = BookDownloadInput(name=book_name)
+    download_books.download_by_name(user_input)

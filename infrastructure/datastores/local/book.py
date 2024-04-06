@@ -19,5 +19,5 @@ class BookRepo:
         self.books[data.name] = VOBook(name=data.name)
         return self.books[data.name]
 
-    def get_all(self) -> list[VOBook]:
-        return VOBooks.model_validate(self.books.keys()).root
+    def get_all(self) -> VOBooks:
+        return VOBooks.model_validate(self.books.keys())

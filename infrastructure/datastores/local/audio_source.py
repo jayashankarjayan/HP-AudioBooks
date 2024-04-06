@@ -3,7 +3,7 @@ from domain.value_objects.audio_source import VOAudioSource
 
 class AudioSourceRepo:
 
-    def get_by_book_name(self, book_name: str) -> VOAudioSource:
+    def get_source(self, book_name: str) -> VOAudioSource:
 
         sources = {"sorcerer's stone":
                    VOAudioSource(name="http://harryaudiobooks.net", book_name="sorcerer's stone",
@@ -28,5 +28,5 @@ class AudioSourceRepo:
                                  book_alias="HARR/7 fry HARRY POTTER AND THE DEATHLY HALLOWS")}
         return sources[book_name]
 
-    def add_for_book(self, source: VOAudioSource) -> VOAudioSource:
+    def add_source(self, source: VOAudioSource) -> VOAudioSource:
         ...

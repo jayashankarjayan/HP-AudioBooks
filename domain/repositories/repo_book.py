@@ -10,5 +10,5 @@ class IBookRepo(Protocol):
     def add_book(self, data: VOBook) -> VOBook:
         ...
     
-    def get_all(self) -> list[VOBook]:
+    def get_all(self) -> VOBooks:
         ...
